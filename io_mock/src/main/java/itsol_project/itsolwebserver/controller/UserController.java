@@ -10,12 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/users")
-@CrossOrigin("http://localhost:8082")
+@CrossOrigin("http://localhost:4200")
 public class UserController {
     @Autowired
     UserService userService;
 
-    @GetMapping("/all")
+    @PostMapping("/all")
     public ResponseEntity findAll(){
         return ResponseEntity.ok().body(userService.findAll());
     }
@@ -28,6 +28,7 @@ public class UserController {
 
     @PostMapping("")
     public ResponseEntity saveOrUpdate(HttpServletRequest request, @RequestBody UserDto dto){
+
         return ResponseEntity.ok().body(userService.saveOrUpdate(request, dto));
     }
 
