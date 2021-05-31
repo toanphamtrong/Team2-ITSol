@@ -18,7 +18,7 @@ import java.util.Date;
 public class User extends BaseEntity implements UserDetails {
     @Column(nullable = false)
     private String name;
-    @Column(nullable = false)
+
     private Date dob; // ngày sinh
     private String email;
     private String phoneNumber; // số điện thoại
@@ -27,7 +27,7 @@ public class User extends BaseEntity implements UserDetails {
     private String username;
     @Column(nullable = false)
     private String password;
-    @Column(columnDefinition = "boolean default false")
+    
     private Boolean isAdminAccount; // loại tài khoản: ADMIN: true || CLIENT: false, bạn sửa đi, cả tôi sợ sai vcl
 
     public User() {}

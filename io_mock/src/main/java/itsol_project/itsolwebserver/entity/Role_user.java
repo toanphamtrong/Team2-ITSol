@@ -15,7 +15,6 @@ public class Role_user extends BaseEntity{
     @Column(nullable = false)
     private Long user_id;
     private Long role_id;
-
     public Role_user() {
     }
 }
