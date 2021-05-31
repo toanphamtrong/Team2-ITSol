@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Team2-ITSol.iml" filepath="$PROJECT_DIR$/.idea/Team2-ITSol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io_mock/itsol-web-server.iml" filepath="$PROJECT_DIR$/io_mock/itsol-web-server.iml" />
+    </modules>
+  </component>
+</project>

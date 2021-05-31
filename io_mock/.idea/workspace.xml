@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7005a489-e53a-4492-a122-f8c1c929fec2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/itsol_project/itsolwebserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itsol_project/itsolwebserver/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/itsol_project/itsolwebserver/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itsol_project/itsolwebserver/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/itsol_project/itsolwebserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itsol_project/itsolwebserver/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +42,14 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\admin\.m2\wrapper\dists\apache-maven-3.8.1-bin\2l5mhf2pq2clrde7f7qp1rdt5m\apache-maven-3.8.1" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1t6ZRyIBZcJy17pcHK9eD65OSF7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -40,10 +69,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -53,12 +85,14 @@
   <component name="RunManager">
     <configuration name="ItsolWebServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="itsol-web-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="itsol_project.itsolwebserver.ItsolWebServerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="itsol_project.itsolwebserver" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -78,21 +112,46 @@
       <workItem from="1622197478299" duration="762000" />
       <workItem from="1622219616577" duration="2002000" />
       <workItem from="1622355253341" duration="3544000" />
+      <workItem from="1622475728411" duration="1618000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="395" y="96" key="#Inspections" timestamp="1622174491681">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="351" y="84" key="#Inspections" timestamp="1622475934866">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="351" y="84" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1622475934866" />
     <state x="395" y="96" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1622174491681" />
+    <state x="163" y="0" key="#Project_Structure" timestamp="1622476010976">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1622476010976" />
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622477395721">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1622477395721" />
     <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1622189984023">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1622189984023" />
+    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1622477391205">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1622477391205" />
     <state x="473" y="206" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1622188527378">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -101,9 +160,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="551" y="286" width="474" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.834@0.0.1536.834" timestamp="1622183457098" />
-    <state x="549" y="158" key="FileChooserDialogImpl" timestamp="1622196062463">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="488" y="138" key="FileChooserDialogImpl" timestamp="1622477401015">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="488" y="138" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1622477401015" />
     <state x="549" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1622196062463" />
     <state width="1493" height="270" key="GridCell.Tab.0.bottom" timestamp="1622360664730">
       <screen x="0" y="0" width="1536" height="834" />
@@ -137,6 +197,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="270" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1622360664730" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1622475770077">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1622475770077" />
     <state x="209" y="78" key="new project wizard" timestamp="1622113769726">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
