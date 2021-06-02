@@ -24,11 +24,20 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+//    @Override
+//    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+//        return userRepository.findByUsername(username);
+//    }
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userRepository.findByUsername(username);
-    }
-
+	public UserDto getUserByUsername(String username) {
+		try {
+			User u = userRepository.findOneByUsername(username);
+			UserDto dto = u.toDTO(u);
+			return dto;
+		} catch (Exception e) {
+			return null;
+		}
+	}
     @Override
     public List<UserDto> findAll() {
         return userRepository.findAll()
@@ -87,4 +96,9 @@ public class UserServiceImpl implements UserService {
 
         return false;
     }
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

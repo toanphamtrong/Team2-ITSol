@@ -5,18 +5,28 @@ import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
+
+import itsol_project.itsolwebserver.dto.ERole;
 
 @Entity
 @Table(name = "role")
 @Getter
 @Setter
 public class Role extends BaseEntity{
-    @Column(nullable = false)
-    private String name;
-    private String description;
-    private Integer status;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
-    public Role() {
-    }
+	@Column(length = 20)
+	private String name;
+	
+	public Role() {
+		// TODO Auto-generated constructor stub
+	}
 }

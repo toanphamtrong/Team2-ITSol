@@ -1,60 +1,78 @@
 package itsol_project.itsolwebserver.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
+
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import itsol_project.itsolwebserver.dto.UserDto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Collection;
-import java.util.Date;
+import javax.persistence.UniqueConstraint;
 
-@Entity
-@Table
+import java.util.Date;
 @Getter
 @Setter
-public class User extends BaseEntity implements UserDetails {
-    @Column(nullable = false)
-    private String name;
-
-    private Date dob; // ngày sinh
-    private String email;
-    private String phoneNumber; // số điện thoại
-    private String address; // địa chỉ
-    @Column(nullable = false)
-    private String username;
-    @Column(nullable = false)
-    private String password;
-    
-    private Boolean isAdminAccount; // loại tài khoản: ADMIN: true || CLIENT: false, bạn sửa đi, cả tôi sợ sai vcl
-
-    public User() {}
-
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
-    }
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return true;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return true;
-    }
-
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table( name = "user",
+uniqueConstraints = {
+		@UniqueConstraint(columnNames = "username"),
+		@UniqueConstraint(columnNames = "email")
+})
+@EntityListeners(AuditingEntityListener.class)
+public class User extends BaseEntity {
+    @Id
+	@GeneratedValue( strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	@Column(name = "username", length = 18)
+	private String username;
+	@Column(name = "password")
+	private String password;
+	@Column(name = "email", length = 100)
+	private String email;
+	@Column(name = "fullname", length = 50)
+	private String fullname;
+	@Column(name = "phone", length = 15)
+	private String phone;
+	@Column(name = "address")
+	private String address;
+	@Column(name = "birthday")
+	private Date birthday;
+	@Column( name = "status", nullable = false)
+	private int status;
+	public UserDto toDTO(User user) {
+		UserDto dto = new UserDto();
+		dto.setId(user.getId());
+		dto.setUsername(user.getUsername());
+		dto.setPassword(user.getPassword());
+		dto.setFullname(user.getFullname());
+		dto.setEmail(user.getEmail());
+		dto.setBirthday(user.getBirthday());
+		dto.setAddress(user.getAddress());
+		dto.setPhoneNumber(user.getPhone());
+		dto.setStatus(user.getStatus());
+		dto.setCreatedDate(user.getCreatedDate());
+		return dto;
+	}
+	public User(String username, String password, String email, String fullname, Date birthDay, String address, String phone,  int status) {
+		this.username = username;
+		this.password = password;
+		this.email = email;
+		this.fullname = fullname;
+		this.birthday = birthDay;
+		this.address = address;
+		this.phone = phone;
+		this.status = status;
+	}
 }

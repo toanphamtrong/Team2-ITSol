@@ -1,0 +1,30 @@
+<table id="customers">
+  <tr>
+    <th>ID</th>
+    <th>Code</th>
+    <th>Name Product</th>
+    <th>Price Sale</th>
+    <th>Sale</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Image</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let pt of productsList">
+    <td>{{pt.id}}</td>
+    <td>{{pt.code}}</td>
+    <td>{{pt.name}}</td>
+    <td>{{pt.price_sale}}</td>
+    <td>{{pt.sale}}</td>
+    <td>{{pt.title}}</td>
+    <td>{{pt.description}}</td>
+    <td style="align-items: center"><img *ngIf="pt?.picture" src="{{pt?.picture}}" height="50px;"/></td>
+    <td>
+      <i class="bi bi-trash" style="cursor: pointer;">Delete</i>
+      &nbsp; | &nbsp;
+      <i class="bi bi-pencil" style="cursor: pointer;">Edit</i>
+    </td>
+  </tr>
+</table>
+<br>
+<button type="submit" (click)="addProduct()" style="margin-left: 50px;">Add Product</button>
